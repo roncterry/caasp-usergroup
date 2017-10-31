@@ -4,7 +4,7 @@ SUSE CaaS Platform User and Group Management Utilities
 ## Description:
 The caasp-usergroup utilities are a set of commands that allow you to more easily create, deleate and manage users and groups in a SUSE CasS Platform cluster. They are essentially scripts that wrap ldap commands into more easlily used commands who's syntax is similar to the traditional linux useradd/groupadd/etc commands.
 
-All commands can be configured using either command line options and/or variables set in a _caasl-usergoup.rc_ file that is sources into the shell environment.
+All commands can be configured using either command line options and/or variables set in a *_caasp-usergoup.rc_* file that is sources into the shell environment.
 
 ## Commands:
 
