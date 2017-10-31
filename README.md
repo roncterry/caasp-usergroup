@@ -14,7 +14,7 @@ Creates new users in the local LDAP directory.
 Deletes users from the local LDAP directory.
 
 **caasp-groupadd.sh**
-Creates new groups in the local LDAP directory.
+-Creates new groups in the local LDAP directory.
 
 **caasp-groupdel.sh**
 Deletes groups from the local LDAP directory.
