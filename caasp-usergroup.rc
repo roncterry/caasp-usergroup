@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+###############################################################################
+#  LDAP Connectivity and Object Location Variables
+###############################################################################
+
+# These should be the defaults in the CaaS Platform Product
+#
+export CAASP_LDAP_BASE_DN="dc=infra,dc=caasp,dc=local"
+export CAASP_LDAP_USER_BASE="ou=People,${CAASP_LDAP_BASE_DN}"
+export CAASP_LDAP_GROUP_BASE_DN="ou=GROUPS,${CAASP_LDAP_BASE_DN}"
+export CAASP_LDAP_ADMIN_GROUP_NAME="Administrators"
+
+# This needs to be set to the IP address or  FQDN of your
+# CaaS Platform Admin Node
+#
+export CAASP_ADMIN_NODE=""
+
+###############################################################################
+#  LDAP Admin Authentication Variables
+###############################################################################
+
+# These should be the defaults for the CaaS Platform Product
+export CAASP_LDAP_ADMIN_USER="admin"
+export CAASP_LDAP_ADMIN_DN="cn=${CAASP_LDAP_ADMIN_USER},${CAASP_LDAP_BASE_DN}"
+
+# This can be set to the LDAP Admin password in your deployment
+#
+# It can be found by either running the get-caasp-ldap-admin-pw.sh script or
+# by manualy attaching to the openldap container running on the admin node and
+# retrieving it from the following file:
+#  /var/lib/misc/infra-secrests/openldap-password
+#
+export CAASP_LDAP_ADMIN_PASSWD=""
